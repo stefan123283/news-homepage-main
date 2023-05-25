@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frontend Mentor | News homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Web 3.0, AI " />
+    <meta name="description" content="The Future of Web 3.0" />
+    <meta name="author" content="Frunză Ștefan" />
+
+    <base href="./assets/" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" hreflang="en" />
+  </head>
+  <body>
+    <main>
+      <div id="overlay"></div>
+
+      <header class="top-header">
+        <img class="logo" src="images/logo.svg" alt="website-logo" />
+        <img src="images/icon-menu.svg" alt="menu-icon" id="menu-icon" />
+        <div id="mobile-menu">
+          <img
+            src="images/icon-menu-close.svg"
+            alt="close-icon"
+            id="close-icon"
+          />
+          <nav>
+            <ul>
+              <li><a>Home</a></li>
+              <li><a>New</a></li>
+              <li><a>Popular</a></li>
+              <li><a>Trending</a></li>
+              <li><a>Categories</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="desktop-layout">
+        <picture>
+          <source
+            media="(min-width:992px)"
+            srcset="images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="images/image-web-3-mobile.jpg"
+            alt="Geometric-shapes-image"
+          />
+        </picture>
+        <header class="main-header">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+
+          <button type="button">READ MORE</button>
+        </header>
+        <section class="news-section">
+          <h2>New</h2>
+          <header>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </header>
+          <div class="bottom-line"></div>
+          <header>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </header>
+          <div class="bottom-line"></div>
+          <header>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </header>
+        </section>
+        <footer>
+          <article>
+            <img
+              class="lazy-loading"
+              src="images/image-retro-pcs.jpg"
+              alt="retro-pc-image"
+            />
+            <div class="article-text">
+              <div>
+                <p>01</p>
+                <h2 class="art1-title">Reviving Retro PCs</h2>
+              </div>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </article>
+          <article>
+            <img
+              class="lazy-loading"
+              src="images/image-top-laptops.jpg"
+              alt="laptop-keyboard-image"
+            />
+            <div class="article-text">
+              <div>
+                <p>02</p>
+                <h2 class="art2-title">Top 10 Laptops of 2022</h2>
+              </div>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </article>
+          <article>
+            <img
+              class="lazy-loading"
+              src="images/image-gaming-growth.jpg"
+              alt="joystick-image"
+            />
+            <div class="article-text">
+              <div>
+                <p>03</p>
+                <h2>The Growth of <wbr />Gaming</h2>
+              </div>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </article>
+        </footer>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
